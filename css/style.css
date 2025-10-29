@@ -1,5 +1,5 @@
 *{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
     list-style: none;
@@ -126,39 +126,38 @@ main{
 
 .footer-container {
     box-sizing: border-box;
-    background-color: rgb(61, 53, 53);
+    background-color: rgb(156, 140, 140);
     color: white;
     padding: 100px 100px;
     margin-top: auto;
     display: flex;
-    
-
-
-    
-    
+    font-size: 20px;
+    line-height: 1.6;
+    gap: 50px
     
 }
 
-.first-inner-footer-container {
-    width: 5.5%;
-    height: 100%;
-    
-     
+
+
+.footer-logo-container img {
+   width: 100px;
 }
 
-.first-inner-footer-container img {
-    width: 100px;
-
-}
-
-/* .Fourth-inner-footer-container {
-    
-} */
 
 .copyright-text {
+   text-align: center;
+   width: 100%;
+   background-color: rgb(156, 140, 140);
+   color: white;
+        
+}
+
+
+.legal-links-container {
     text-align: center;
     width: 100%;
-    background-color: black;
+    background-color: rgb(156, 140, 140);
     color: white;
     
+
 }
