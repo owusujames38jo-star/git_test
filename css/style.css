@@ -118,15 +118,30 @@ main{
     
 }
 
+.nav-container a:hover {
+    text-decoration: underline;
+    background-color: black;
+}
+
 .navivagation-links{
     transform: translateX(100px);
 
 }
 
+.right-nav a:hover{
+    text-decoration: none;
+}
+
 .nav-container button {
     background-color: rgb(65, 57, 48);
-    width: 100px;
+    width: 90px;
+    height: 35px;
     font-size: 20px;
+    display: flex;
+}
+
+.nav-container button:hover{
+    background-color: black;
 }
 
 .fas.fa-user, .fas.fa-shopping-cart, .fas.fa-shopping-bag {
@@ -138,15 +153,43 @@ main{
 
 .footer-container {
     box-sizing: border-box;
-    background-color: rgb(43, 11, 11);
+    background-color: rgb(180, 129, 129);
     color: white;
-    padding: 100px 100px;
+    padding: 30px 30px;
     margin-top: auto;
     display: flex;
     font-size: 20px;
     line-height: 1.6;
     gap: 50px
     
+}
+
+.footer-container a {
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.footer-container button {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.social-links {
+    display: flex;
+}
+
+.newsletter-container button {
+    width: 70px;
+}
+.newsletter-container input {
+    width: 70%;
+    height: 26px;
 }
 
 
@@ -160,7 +203,7 @@ main{
 .copyright-text {
    text-align: center;
    width: 100%;
-   background-color: rgb(156, 140, 140);
+   background-color: rgb(22, 18, 18);
    color: white;
         
 }
@@ -169,8 +212,16 @@ main{
 .legal-links-container {
     text-align: center;
     width: 100%;
-    background-color: rgb(156, 140, 140);
+    background-color: rgb(22, 18, 18);
     color: white;
     
 
+}
+
+.legal-links-container a {
+    color: white;
+}
+
+.legal-links-container a:hover{
+    text-decoration: underline;
 }
