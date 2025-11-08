@@ -7,6 +7,7 @@
 }
 
 body {
+    background-size: cover;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,75 +18,64 @@ body {
 
 }
 
-body::before{
-    content: "";
+.background-images {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+
+
+.background-images img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    
+}
+
+
+.overlay {
+    background-color: rgba(87, 78, 78, 0.5);
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    
+}
+
+header {
     width: 100%;
-    height: 100%;
-    background-image: url(../images/hero-background.jpg);
-    background-size: cover;
-    background-position: center;
-    transform: scaleX(-1);
-    z-index: 1;
-    filter: blur(1.5px);
-}
-
-body > *{
-    position: relative;
-    z-index: 2;
-    margin-bottom: 430px;
-}
-
-
-.sticky-header {
-    /* padding: 15 20px;
-    text-align: center;
-    transition: all 0.3s ease;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    height: 100vh;
     background-color: transparent;
-    border-style: none;
-    min-height: 700px;
-    width: 100%;
-    background-image: url(../images/hero-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: auto; */
-
-    position: relative;
-    /* height: 500px; */
-
+    z-index: 1000;
+    
 }
-
-
 
 
 .logo-container {
     font-size: 2.5em;
     font-weight: bold;
-    color: #000000;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    width: 100%;
+    width: 10%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* background-image: url(../images/logobackgr.png); */
-    text-align: center;
-    background-color: transparent;
-
+    position: relative;
+    transform: translateX(-20px);
+    z-index: 1000;
+    top: 50px;
+    
+    
 }
 
 .logo-container img {
     width: 100px;
     height: auto;
     border-radius: 50%;
-    align-items: center;
-    
+    transform: translateX(130px);
 }
 
 
@@ -95,18 +85,19 @@ body > *{
 
 .logo-text {
     font-family: "Aguafina Script", cursive;
-    font-size: 50px;
+    font-size: 30px;
     color: rgb(68, 37, 37);
-    margin-top: 1px;
-
+    transform: translateX(250px);
+    
 }
 
 .search-bar {
-    margin-left: 1440px;
+    margin-left: 1140px;
     position: relative;
-    bottom: 55px;
+    bottom: 13px;
     width: auto;
     height: auto;
+    z-index: 1000;
     
 
 }
@@ -142,7 +133,9 @@ body > *{
 
 
 .nav-container {
-    padding: 20px;
+    width: 100%;
+    height: 170px;
+    padding: 0;
     margin:0;
     box-sizing: border-box;
     position: sticky;
@@ -150,23 +143,24 @@ body > *{
     font-size: 25px;
     background-color: white;
     top: 0;
-    z-index: 1000;
+    align-items: center;
+    transform: translateY(-126px);
     
+       
 }
 
 
 .nav-container ul{
-
     display: flex;
-    gap: 50px;
+    gap: 30px;
     margin-left: auto;
     text-decoration: solid;
+    transform: translateX(-60px);
 
 }
 
 .nav-container a{
     color:black;
-    /* font-weight: bolder; */
     
 }
 
@@ -181,7 +175,8 @@ body > *{
 }
 
 .right-nav {
-transform: translateX(-75px);
+    position: relative;
+    left: 20px;
 
 }
 
@@ -195,7 +190,6 @@ transform: translateX(-75px);
 }
 
 .nav-container button {
-
     width: 90px;
     height: 35px;
     font-size: 25px;
@@ -216,78 +210,20 @@ transform: translateX(-75px);
 } 
 
 
-.slide-container {
-    padding: 0;
-    margin: 3em auto;
-    gap: 1em;
-    width: 100%;
-    overflow-x: auto;
-    height: 450px;
-    border-radius: 8px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    
-
-}
-
-/* .slide-container::scroll-button(right) {
-    content: icon;
-    border: none;
-    background-color: transparent;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
-    scroll-behavior: smooth;
-   
-}
-
-.slide-container::scroll-button(left) {
-    content: icon;
-    border: none;
-    background-color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
-   
-} */
-
-
-.carouse-container div {
-    width: 300px;
-    max-height: fit-content;
-    /* position: absolute; */
-    transform: translateX(50px);
-    display: flex;
-    scroll-snap-type: x mandatory;
-    animation: slide 15s infinite linear;
-    
-    
-    
-    
-}
-
-.slide-container img {
-    width: 460px;
-    object-fit:contain;
-    scroll-snap-align: center;
-    overflow: hidden;
-    
-}
 
 .make-quick-order {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100px;
+    height: auto;
     display: flex;
-    bottom: 100px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #7d6969;
+    color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
-    bottom: 255px;
     gap: 150px;
+    position: sticky;
+    
 
 }
 
@@ -301,29 +237,54 @@ transform: translateX(-75px);
 
 .make-quick-order button {
     height: 30px;
+    width: 150px;
     margin: 30px;
     border-style: groove;
+    background-color: transparent;
     
 }
 
-.our-product {
-    background-color: rgb(248, 248, 248);
-    margin: 8px;
-    padding: 0;
-    font-size: 30px;
-    bottom: 260px;
-    justify-items: center;
-    align-items: center;
-    width: 1200px;
-    height: 200px;
-    transform: translateX(300px);
+.make-quick-order button:hover {
+    text-decoration: underline;
+    background-color: rgb(150, 110, 110);
+}
 
+
+.our-best-product {
+    font-size: 23px;
+    color: #4f4545;
+    margin: 80px;
     
 }
 
-.our-product p {
-    justify-items: center;
+.our-best-product h2 {
+    color: #4f4545;
+    transform: translateY(-40px);
+    margin-left: 600px;
+    font-size: 34px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
 
+.paragraph-b {
+    font-size: 20px;
+  
+}
+
+.paragraph-c {
+    font-size: 20px;
+  
+}
+
+.sweet-image {
+    width: 700px;
+    height: 400px;
+    transform: translateX(800px);
+    position: relative;
+    top: -267px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 main{
@@ -343,23 +304,23 @@ main{
 } */
 
 .middlepage-cake {
-    margin-top: 0;
+    margin: 0;
     padding: 0;
     background-color: #ffffff;
-    height: 10px;
     width: 100%;
     grid-template-columns:max-content;
-    transform: translateY(-250px);
     transition: all 0.3s ease-in-out;
+    height: auto;
+    transform: translateY(-290px);
 
 }
 
 
 .middlepage-cake img {
-    width: 310px;
-    height: 450px;
+    width: 200px;
+    height: auto;
     object-fit: scale-down;
-    transform: translateX(1px);
+    transform: translateX(25px);
     border-radius: 8px;
     border: 2px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
