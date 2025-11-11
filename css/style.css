@@ -44,11 +44,9 @@ body {
 .site-header {
     width: 100%;
     height: 10vh;
-    position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
     z-index: 1000;
-    /* position: fixed; */
+    position: fixed;
     
 }
 
@@ -256,7 +254,20 @@ body {
     font-size: 34px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
-    
+}
+
+.our-best-product button {
+    background-color: rgb(198, 81, 81);
+    width: 500px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -550px;
+}
+
+.our-best-product a {
+    color: white;
 }
 
 .paragraph-b {
@@ -266,7 +277,7 @@ body {
 
 .paragraph-c {
     font-size: 20px;
-  
+
 }
 
 .sweet-image {
@@ -323,7 +334,7 @@ body {
     height: auto;
     box-sizing: border-box;
     background-color: rgb(180, 129, 129);
-    color: white;
+    color: black;
     padding: 30px 30px;
     display: flex;
     font-size: 20px;
@@ -334,9 +345,10 @@ body {
     
 }
 
-.footer-container a {
-    color: white;
+#footer-container a {
+    color: black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
     
 
 }
@@ -369,17 +381,19 @@ body {
 }
 
 .legal-links-container {
-    text-align: center;
+    display: flex;
     width: 100%;
     background-color: rgb(22, 18, 18);
     color: white;
     bottom: 0;
-    
 
 }
 
-.legal-links-container a {
+
+.legal-links-container p {
     color: white;
+    transform: translateX(770px)
+
 }
 
 .legal-links-container a:hover{
