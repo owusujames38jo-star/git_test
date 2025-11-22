@@ -43,7 +43,7 @@ body {
 }
 
 .img-ontop-img {
-    transform: translateX(600px);
+    transform: translateX(75%);
 }
 
 
@@ -51,7 +51,7 @@ body {
 .site-header {
     width: 100%;
     height: 10vh;
-    top: 0px;
+    top: 0;
     z-index: 1000;
     position: fixed;
     
@@ -59,12 +59,12 @@ body {
 
 .nav-container {
     width: 100%;
-    height: 170px;
+    height: 15.7vh;
     padding: 0;
     margin:0;
     box-sizing: border-box;
     display: flex;
-    font-size: 25px;
+    font-size: 1.5rem;
     background-color: rgb(255, 255, 255);
     top: 0;
     align-items: center;
@@ -82,10 +82,10 @@ body {
 }
 
 .logo-container img {
-    width: 100px;
+    width: 90%;
     height: auto;
     border-radius: 50%;
-    transform: translateX(100px);
+    transform: translateX(10%);
 }
 
 
@@ -95,11 +95,11 @@ body {
 
 .logo-text {
     font-family: "Aguafina Script", cursive;
-    font-size: 35px;
+    font-size: 2.4rem;
     color: rgb(68, 37, 37);
-    transform: translateX(200px);
+    transform: translateX(100%);
     position: absolute;
-    top: 25px;
+    top: 20%;
     align-content: center;
     justify-content: center;
 
@@ -109,30 +109,30 @@ body {
 
 .search-bar {
     position: absolute;
-    top: 66px;
-    width: 100px;
-    height: 34px;
+    top: 60%;
+    width: 1%;
+    /* height: 1%; */
     z-index: 1000;
-    transform: translateX(1200px);
+    transform: translateX(6300%);
 
 }
 
 
 .search-bar input {
-    width: 285px;
-    height: 30px;
+    width: 1400%;
+    height: 3.5vh;
     background-color: transparent;
-    transform: translateX(35px);
+    transform: translateX(11%);
     
 }
 
 .search-btn {
     width: auto;
-    height: 30px;
+    height: 4vh;
     font-size: 20px;
     cursor: pointer;
     position: absolute;
-    top: 5px;
+    top: 0;
 
 }
 
@@ -140,10 +140,10 @@ body {
 
 .nav-container ul{
     display: flex;
-    gap: 30px;
+    gap: 2vw;
     margin-left: auto;
     text-decoration: solid;
-    transform: translateX(-60px);
+    transform: translateX(-10%);
 
 }
 
@@ -157,20 +157,20 @@ body {
     background-color: rgb(150, 110, 110);
 }
 
-.navivagation-links{
+/* .navivagation-links{
     transform: translateX(100px);
 
-}
+} */
 
 .right-nav {
     position: relative;
-    left: 20px;
+    /* left: 20px; */
 
 }
 
 .right-nav a{
     color: black;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .right-nav a:hover{
@@ -178,12 +178,12 @@ body {
 }
 
 .nav-container button {
-    width: 90px;
-    height: 35px;
-    font-size: 25px;
+    width: 90%;
+    height: 3vh;
+    font-size: 1.5rem;
     display: flex;
     border-style: none;
-    opacity: 1000px;
+    opacity: 1000;
     background-color: transparent;
     
 }
@@ -210,28 +210,30 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: auto;
+    height: 7vh;
     display: flex;
     background-color: #7d6969;
     color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 3%;
     
 }
 
 .make-quick-order p {
-    font-size: 30px;
+    font-size: 2rem;
+
 }
 
 .make-quick-order a {
-    font-size: 20px;
+    font-size: 1.1rem;
+    
 }
 
 .make-quick-order button {
-    height: 30px;
-    width: 150px;
-    margin: 30px;
+    height: 4vh;
+    width: 10vw;
+    margin: 0;
     border-style: groove;
     background-color: transparent;
     
@@ -248,31 +250,31 @@ body {
 
 
 .our-best-product {
-    font-size: 23px;
+    font-size: 1.5rem;
     color: #4f4545;
-    margin: 80px;
+    margin: 4%;
     font-family: "Caveat", cursive;
     
 }
 
 .our-best-product h2 {
     color: #4f4545;
-    transform: translateY(-40px);
-    margin-left: 600px;
-    font-size: 34px;
+    /* transform: translateY(-40px); */
+    margin-left: 30%;
+    font-size: 2rem;
     font-family: "Monoton", sans-serif;
-    word-spacing: 10px;
+    word-spacing: 0.5rem;
     
 }
 
 .our-best-product button {
     background-color: rgb(198, 81, 81);
-    width: 500px;
-    height: 50px;
-    font-size: 25px;
-    border-radius: 5px;
+    width: 26vw;
+    height: 4.6vh;
+    font-size: 1.6rem;
+    border-radius: 1rem;
     position: absolute;
-    bottom: -630px;
+    bottom: -66%;
 }
 
 .our-best-product a {
@@ -280,12 +282,12 @@ body {
 }
 
 .paragraph-b {
-    font-size: 30px;
+    font-size: 2rem;
   
 }
 
 .paragraph-c {
-    font-size: 30px;
+    font-size: 2rem;
 
 }
 
@@ -326,9 +328,11 @@ body {
     
 }
 
-.middlepage-cake img:hover {
+.middlepage img:hover {
     transform: translateY(-20px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.2);
+    cursor: pointer;
 } 
     
 .last-page {
