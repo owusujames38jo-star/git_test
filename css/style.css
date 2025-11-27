@@ -86,6 +86,7 @@ body {
     height: auto;
     border-radius: 50%;
     transform: translateX(10%);
+    
 }
 
 
@@ -141,11 +142,41 @@ body {
 .nav-container ul{
     display: flex;
     gap: 2vw;
-    margin-left: auto;
+    bottom: 8%;
     text-decoration: solid;
-    transform: translateX(-10%);
+    transform: translateX(55%);
+    font-size: 1.5rem;
+    position: absolute;
+    
 
 }
+
+#hamburger-btn {
+    display: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem;
+    width: 3%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(58rem);
+    
+    
+}
+
+.hamburger-line {
+    display: block;
+    width: 100%;
+    height: 2%;
+    background: #333;
+    margin: 3px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    
+}
+
 
 .nav-container a{
     color:black;
@@ -163,8 +194,8 @@ body {
 } */
 
 .right-nav {
-    position: relative;
-    /* left: 20px; */
+    position: absolute;
+    left: 85rem;
 
 }
 
@@ -301,6 +332,10 @@ body {
     top: 120%;
 }
 
+.sweet-image{
+    max-width: 100%;
+}
+
 
 .middlepage {
     margin: 0;
@@ -318,6 +353,7 @@ body {
 
 
 .middlepage img {
+    max-width: 100%;
     width: 10.6vw;
     height: auto;
     object-fit: scale-down;
@@ -412,3 +448,48 @@ body {
 .legal-links-container a:hover{
     text-decoration: underline;
 }
+    
+
+/* --- Media Query for small/phone (Max Width 576px) --- */
+@media screen and (max-width: 576px) {
+.logo-container img {
+    transform: translateY(5px);
+}
+.logo-text {
+    font-size: 1.7rem;
+    top: 1rem;
+    
+}
+
+.nav-container ul{
+    display: none;
+
+}  
+#hamburger-btn {
+    display: block;
+
+}
+
+
+}
+
+/* --- Media Query for medium/tablet portrate (Max Width 768px) --- */
+@media screen and (max-width: 768px) {
+    
+
+}
+
+/* --- Media Query for medium/tablet landscape (Max Width 992px) --- */
+@media screen and (max-width: 992px) {
+    
+
+}
+
+/* --- Media Query for large/desktop (Max Width 1200px) --- */
+@media screen and (max-width: 1200px) {
+    
+
+}
+
+
+
